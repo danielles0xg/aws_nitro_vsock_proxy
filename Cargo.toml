@@ -1,0 +1,25 @@
+[package]
+name = "vsock-proxy"
+version = "1.0.1"
+authors = ["The AWS Nitro Enclaves Team <aws-nitro-enclaves-devel@amazon.com>"]
+edition = "2018"
+rust-version = "1.71"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+clap = "~4.4"
+env_logger = "0.10"
+hickory-resolver = "0.24"
+idna = "1.0.3"
+log = "0.4"
+nix = "0.26"
+yaml-rust2 = "0.9"
+threadpool = "1.7.1"
+vsock = "0.5"
+
+[dev-dependencies]
+ctor = "0.2.7"
+rand = "0.8.5"
+tempfile = "3.16.0"
